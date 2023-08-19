@@ -1,0 +1,98 @@
+html{
+    font-size: 62.5%;
+    font-family: 'Roboto',sans-serif;
+}
+ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+a{
+    color:white;
+    font-size: 2rem;
+    text-decoration: none;
+}
+nav{
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+}
+li{
+    list-style: none;
+}
+header{
+    background-color: #8b8c8f;
+    height: 100px;
+    position: sticky;
+    top: 0px;
+}
+.doxalogo{
+    height: 100%;
+    width: 250%;
+}
+.containerlogo{
+    height: 70px;
+    width: 70px;
+    margin-left: 30px;
+}
+h1{
+    text-align: center;
+    color: #EAC696;
+    font-size: 8rem;
+    margin-top: 50px;  
+}
+.historia{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.texto_historia{
+    width: 400px;
+    font-size: 1.9rem;
+    margin-right: 50px;
+}
+.historiadoxa{
+    margin-top: 10px;
+}
+.subtitulo_historia{
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.locacion{
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+.lugares{
+    margin-top: 20px;
+}
+.lugares2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.lugares3{
+    width: 500px;
+    font-size: 2rem;
+    margin-right: 50px;
+}
+.service{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+}
+p{
+    height: 150px;
+    width: 150px;
+    font-size: 3rem;
+}
+.newlogo{
+    height: 75%;
+    width: 90%;
+}
