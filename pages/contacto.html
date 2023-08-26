@@ -4,9 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Roboto:ital,wght@0,300;1,400&display=swap" rel="stylesheet">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- css -->
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
 <body>
+    <div class="container-fluid">
     <header>
         <nav>
         <ul>
@@ -26,35 +34,57 @@
         </nav>
     </header>
     <main>
-        <h1>Contacto</h1>
-            <form>
-                <label for="Nombre Completo">Nombre Completo:</label>
+        <div class="brand">
+        <h1 class="Intro">Contacto</h1>
+        <form action="">
+        <div class="content">
+            <div class="contact">
                 <br>
+                <label for="Nombre Completo">Nombre Completo:</label>
+                </br>
                 <br>
                 <input type="nombre completo" id="nombre completo" placeholder="Nombre completo">
-                <br>
+                </br>
                 <br>
                 <label for="Correo electronico">Correo electronico:</label>
+                </br>
                 <br>
-                <br>
-                <input type="correco electronico"id="correo electronico" placeholder="Correo electronico">
-                <br>
+                <input type="Correo electronico" name="correo electronico" placeholder="Correo electronico">
+                </br>
                 <br>
                 <label for="Numero de contacto">Numero de contacto:</label>
+                </br>
                 <br>
-                <br>
-                <input type="Numero de contacto" id="Numero de contacto" placeholder="Numero de contacto">
-                <br>
+                <input type="tel" id="Numero de contacto" placeholder="Numero de contacto" pattern="[0-9]-{3} requerimientos">
+                </br>   
                 <br>
                 <label for="Escribe tu mensaje">Escribe tu mensaje:</label>
+                </br>   
                 <br>
+                <textarea name="mensaje" rows="3" placeholder="Escribe tu mensaje"></textarea>
+                </br>   
                 <br>
-                <textarea name="" id="" cols="30" rows="10" placeholder="Escribe"></textarea>
-                <br>
-                <br>
-                <input type="submit" value="Enviar">
-            </form>
+                <button type="submit">
+                Enviar
+                </button>
+                </br>
+                <div class="conocernos">
+                <h2 class="help">Podemos <span>Ayudarte</span></h2>
+                <ul>
+                    <li><i class="bi bi-map-fill"></i></li>
+                    <li><i class="bi bi-telephone-fill"></i></li>
+                    <li><i class="bi bi-envelope-open-fill"></i></li>
+                </ul>
+                <p>
+                Para conocer más sobre nuestros servicios de transporte y logística de tercera generación, contacta nuestro centro de Doxa o nuestras oficinas operativas en el Mercosur.
+                </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </form>
     </main>
     <footer></footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 </html>
