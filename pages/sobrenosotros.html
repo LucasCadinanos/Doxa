@@ -4,55 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- Animaciones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- Aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- css -->
     <link rel="stylesheet" href="../css/estilos.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <header>
-        <nav>
-        <ul class="nav_links">
-            <li>
-                <a href="../index.html">Inicio</a>
-            </li>
-            <li>
-                <a href="./servicios.html">Servicios</a>
-            </li>
-            <li>
-            <a href="./nuestrahistoria.html">Nuestra Historia</a>
-            </li>
-        </ul>
-        </nav>
-        <a class="cta" href="./contacto.html"><button class="botoninicio">Contacto</button></a>
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"crossorigin="anonymous"></script>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <button class="navbar-toggler"type="button"data-toggle="collapse"data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                    <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="./servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="./nuestrahistoria.html">Sobre nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="./contacto.html">Conctacto</a>
+                    </li>
+                </ul>
+            </div>
+            </nav>
     </header>
     <main>
-        <h1>Sobre Nosotros</h1>
-        <h2 class="locacion">Donde nos podes encontrar</h2>
-        <section class="lugares">
-            <article class="lugares2">
-                <div class="lugares3">
-    DOXA SRL cuenta con una importante infraestructura y con filiales para su asesoramiento en Comercio Exterior situados en puntos estratégicos:
-    <ul>En chile nos encontramos en Santiago "Guardia Vieja 255, oficna 1104"</ul>
-    <ul>En brasil nos encontramos en Sao Paulo "Av. Jose Cesar de Oliveira 181. Villa Leopoldina"</ul>
-    <ul>En argentina nos encontramos en Buenos Aires "Rodriguez peña 2030" CP 1024</ul>
-    <ul>Tambien en Argentina nos encontramos en Paso de los libres "Sitja Nin 1139" CP 3230</ul>
-                </div>
-            <div class="mapa">
-        <img src="../img/Mapa.jpg"  alt="Mapa">
+        <h1 class="animate__animated animate__bounceIn animate__delay-1s">Sobre Nosotros</h1>
+        <h2 class="locacion animate__animated animate__bounceInUp animate__delay-1s">Donde nos podes encontrar</h2>
+        <article class="lugares2">
+            <div class=" lugares3 animate__animated animate__fadeInLeftBig animate__delay-1s">
+                DOXA SRL cuenta con una importante infraestructura y con filiales para su asesoramiento en Comercio Exterior situados en puntos estratégicos:
+                <ul>En chile nos encontramos en Santiago "Guardia Vieja 255, oficna 1104"</ul>
+                <ul>En brasil nos encontramos en Sao Paulo "Av. Jose Cesar de Oliveira 181. Villa Leopoldina"</ul>
+                <ul>En argentina nos encontramos en Buenos Aires "Rodriguez peña 2030" CP 1024</ul>
+                <ul>Tambien en Argentina nos encontramos en Paso de los libres "Sitja Nin 1139" CP 3230</ul>
             </div>
-        </section>
-        </article>
-    </main>
-</body>
-<footer>
-    <div class="footer-content">
-        <h3>Siguenos en nuestras redes sociales</h3>
-        <ul class="socials">
-            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
-        </ul>
+        <div data-aos=fade-up data-aos-easing="linear" data-aos-duration="1500" class="mapa">
+            <img src="../img/Mapa.jpg"  alt="Mapa">
+        </div>
+    </section>
+    </article>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <footer>
+    <p>Siguenos en nuestras redes sociales</p>
+    <div class="redes">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-google-plus"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin-square"></i>
     </div>
 </footer>
+</body>
 </html>
